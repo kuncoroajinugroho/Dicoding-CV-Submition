@@ -1,0 +1,265 @@
+html, body {
+    background: #181818;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    width: 90%;
+    max-width: 800px;
+    background: #f3f3f3;
+    margin: 20px auto;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 1100px;
+}
+
+.avatar {
+    width: 80%;
+    height: 22%;
+    border-radius: 51%;
+    border: 2px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    width: 40%;
+    background: #e7e7e9;
+}
+
+.left h2{
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.left p {
+    font-size: 20px;
+    font-family: 'Times New Roman',Times, serif;
+    display: block;
+    text-align: center;
+    margin : 10px 10px 10px;
+}
+
+.left b {
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman',Times,serif;
+    display: block;
+    text-align: center;
+    margin : 5px 0px 10px;
+}
+
+.moto b {
+    font-size: 14.5px;
+    font-style: italic;
+    font-family: 'Times New Roman',Times,serif;
+    display: block;
+    text-align: center;
+    margin : 10px 10px 10px;
+    color : #6baca8;
+}
+
+.personal p {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    text-align: left;
+    margin: 15px 10px 10px;
+    color: black;
+}
+
+.skill p {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    text-align: center;
+    margin: 0px 10px 0px;
+    color: black;
+    line-height: 180%;
+}
+.social p {
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    text-align: center;
+    margin: 0px 0px 0px 5px;
+    line-height: 200%;
+}
+
+
+.right {
+    width: 60%;
+    background: white;
+}
+
+.right p {
+    margin: 10px 10px 10px 10px;
+    font-size: 14.5px;
+}
+
+.steps {
+    width: 450px;
+    padding: 0px 0;
+    position: relative;
+
+}
+
+.step {
+    padding: 0 0px 5px 50px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+
+.subheader2 p {
+    margin: 5px 5px 5px;
+    color: #6baca8;
+}
+
+.subheader3 p {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 17.5px
+}
+
+.step::before {
+    content: '';
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-color: rgb(198, 198, 198);
+    border-radius: 15px;
+    left: calc(50px / 2);
+    transform: translateX(-45%);
+    z-index: 2;
+}
+
+.step::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: rgb(198, 198, 198);
+    left: calc(50px / 2);
+    top: 0;
+    z-index: 1;
+}
+
+.step.minimized>.step-content {
+    height: 0px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@-webkit-keyframes reset {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes reset {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes reset {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#instaFade {
+    -webkit-animation-name: reset, fade-in;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in;
+
+    -moz-animation-name: reset, fade-in;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-timing-function: ease-in;
+
+    animation-name: reset, fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+#quickFade {
+    -webkit-animation-name: reset, fade-in;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-timing-function: ease-in;
+
+    -moz-animation-name: reset, fade-in;
+    -moz-animation-duration: 2.5s;
+    -moz-animation-timing-function: ease-in;
+
+    animation-name: reset, fade-in;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in;
+}
